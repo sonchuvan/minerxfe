@@ -1,0 +1,26 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title">Thông tin người chơi</h4>
+  <button type="button" class="close" aria-describedby="modal-title" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form class="col-md-12" [noValidate]="true" [formGroup]="form">
+    <div class="form-group">
+      <label for="userName">Tên <label class="text-danger">*</label></label>
+      <input class="form-control" id="userName" formControlName="userName"/>
+    </div>
+    <div class="form-group">
+      <label>Time:</label>
+      <label>{{rank.time}}</label>
+    </div>
+    <div class="form-group">
+      <label >Play time:</label>
+      <label>{{rank.playTime}}</label>
+    </div>
+    <div>
+      <button class="btn btn-outline-primary btn-sm mr-3" type="submit" [disabled]="form.invalid" (click)="doSubmit()">Lưu</button>
+      <button class="btn btn-sm ml-1" (click)="modal.dismiss('Cancel click')">Hủy</button>
+    </div>
+  </form>
+</div>

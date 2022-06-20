@@ -1,0 +1,40 @@
+.status {
+  margin:0px 5px 0px 5px;
+}
+.boxMiner{
+  width: 610px;
+  min-width: 610px;
+}
+.box {
+  background-color: beige;
+  width: 43px;
+  height: 43px;
+  padding: 0px;
+  /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;*/
+}
+.innerBox {
+  width: 38px;
+  height:38px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.boxDefault{
+  background-color: darkgray;
+  padding: 0px;
+}
+.clicked{
+  background-color: aquamarine;
+}
+
+.boom{
+  padding: 0px;
+}
+
+.flag{
+  background-image: url("src/assets/images/goku.gif");
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+}
+.disableClick{
+  pointer-events: none;
+}
